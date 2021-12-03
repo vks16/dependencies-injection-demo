@@ -15,12 +15,16 @@
 
     </bean>
 
+<!--    <bean id="myCoach"-->
+<!--          class="com.vkswebsolutions.BaseballCoach">-->
+<!--        <constructor-arg ref="myFortuneService" />-->
+<!--    </bean>-->
+
+
     <bean id="myCoach"
-          class="com.vkswebsolutions.BaseballCoach">
-        <constructor-arg ref="myFortuneService" />
+          class="com.vkswebsolutions.CricketCoach">
+        <property name="fortuneService" ref="myFortuneService" />
     </bean>
-
-
 </beans>
 
 
