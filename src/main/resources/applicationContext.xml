@@ -24,6 +24,7 @@
     <bean id="myCoach"
           class="com.vkswebsolutions.CricketCoach">
         <property name="fortuneService" ref="myFortuneService" />
+        
     </bean>
 </beans>
 
