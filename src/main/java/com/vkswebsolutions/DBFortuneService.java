@@ -2,10 +2,10 @@ package com.vkswebsolutions;
 
 import org.springframework.stereotype.Component;
 
-@Component
-public class HappyFortuneService implements FortuneService{
+@Component("db")
+public class DBFortuneService implements FortuneService{
     @Override
     public String getFortune() {
-        return "Today is your lucky day!";
+        return "Getting from db";
     }
 }

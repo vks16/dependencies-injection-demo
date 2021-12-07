@@ -7,13 +7,13 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd
 ">
-
+<context:component-scan base-package="com.vkswebsolutions" />
 
     <!-- Define your beans here -->
-    <bean id="myFortuneService"
-    class="com.vkswebsolutions.HappyFortuneService">
+<!--    <bean id="myFortuneService"-->
+<!--    class="com.vkswebsolutions.HappyFortuneService">-->
 
-    </bean>
+<!--    </bean>-->
 
 <!--    <bean id="myCoach"-->
 <!--          class="com.vkswebsolutions.BaseballCoach">-->
@@ -21,10 +21,11 @@
 <!--    </bean>-->
 
 
-    <bean id="myCoach"
-          class="com.vkswebsolutions.CricketCoach">
-        <property name="fortuneService" ref="myFortuneService" />
-    </bean>
+<!--    <bean id="myCoach"-->
+<!--          class="com.vkswebsolutions.CricketCoach">-->
+<!--        <property name="fortuneService" ref="myFortuneService" />-->
+<!--        -->
+<!--    </bean>-->
 </beans>
 
 
